@@ -5,7 +5,7 @@
 > Routing refers to how an application's endpoints (URIs) respond to client requests.
 
 `Chi` allows you to route/handle any HTTP request method, such as all the usual suspects:
-GET, POST, HEAD, PUT, PATCH, DELETE, OPTIONS, TRACE, CONNECT
+GET, POST, HEAD, PUT, PATCH, DELETE, QUERY, OPTIONS, TRACE, CONNECT
 
 ## Handling HTTP Request Methods
 
@@ -22,6 +22,7 @@ Options(pattern string, h http.HandlerFunc)
 Patch(pattern string, h http.HandlerFunc)
 Post(pattern string, h http.HandlerFunc)
 Put(pattern string, h http.HandlerFunc)
+Query(pattern string, h http.HandlerFunc)
 Trace(pattern string, h http.HandlerFunc)
 ```
 
